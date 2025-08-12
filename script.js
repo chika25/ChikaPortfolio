@@ -80,22 +80,3 @@ contactBtn.addEventListener('click', () => {
   }
 });
 
-// translation logic
-languageBtn.addEventListener('click', () => {
-    const current = lg.textContent.trim();
-    const newLang = current === 'JP' ? 'EN' : 'JP';
-    lg.textContent = newLang;
-
-    Object.keys(translations[newLang]).forEach(key => {
-        const el = document.getElementById(key);
-        if (el) el.innerHTML = translations[newLang][key];
-    });
-
-    if(newLang==='JP'){
-        document.getElementById('fName').style.fontSize = '180px';
-        document.getElementById('lName').style.fontSize = '40px';
-    }else{
-        document.getElementById('fName').style.fontSize = '200px';
-        document.getElementById('lName').style.fontSize = '200px';
-    }
-});

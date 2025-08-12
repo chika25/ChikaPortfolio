@@ -23,8 +23,11 @@ const translations = {
         resumeEn:"English",
         resumeJp:"Japanese",
         contactBtn: "Contact",
-        contactText: "Please contact me at",
+        contactText: `Please contact me at <a href="mailto:c.kurihara25@gmail.com" class="email">c.kurihara25@gmail.com</a>`,
         contactTextOr: "or",
+        inTitle: `Internship<br>Work`,
+        inDescription: `Worked as a website developer during my internship. Created new pages (such as landing pages) and managed or modified existing pages using HTML, 
+                CSS, JavaScript, and Shopify Liquid on a Shopify-powered site.`,
     },
     JP: {
         fName: "栗原 千佳",
@@ -48,6 +51,10 @@ const translations = {
         resumeJp: "日本語",
         contactBtn: "お問い合わせ",
         contactText: `こちらまでご連絡ください: <a href="mailto:c.kurihara25@gmail.com" class="email">c.kurihara25@gmail.com</a>`,
-        contactTextOr: "または"
+        contactTextOr: "または",
+        inTitle: `インターンシップ<br>制作`,
+        inDescription: `インターンシップ期間中、ウェブサイトデベロッパーとして勤務しました。  
+                        ランディングページなどの新規ページを作成し、HTML、CSS、JavaScript、Shopify Liquidを使用して、Shopifyで構築されたサイトの既存ページの管理や修正を行いました。`,
+        
     }
 };
