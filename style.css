@@ -159,7 +159,7 @@ a{
     animation: bounce 1s;
 }
 
-/* styles for toggling items */
+/* toggling items styling */
 #aboutContent, #worksContent, #skillsContent, #resumeContent, #contactContent{
     max-height: 0;
     overflow: hidden;
@@ -191,7 +191,7 @@ a{
     max-height: 126.8px; 
 }
 
-/* styles for internship-work.html */
+/* internship-work.html styling */
 #inContent{
     background-color: #FEFAE0;
     width: 80%;
@@ -216,4 +216,63 @@ a{
 #inDescription{
     font-size:35px;
     margin: 35px 70px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin:0 70px;
+    padding-bottom: 60px;
+}
+
+.gallery img{
+    width:100%;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    height: 200px;   
+    object-fit: contain;
+    background-color: white;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #FEFAE0;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-height: 80vh;        
+    object-fit: contain; 
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
 }
