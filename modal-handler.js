@@ -3,25 +3,30 @@
 const modal = document.getElementById("myModal");
 const modalImg = document.getElementById("modalImage");
 const modalDesc = document.getElementById("modalDesc");
-const closeBtn = document.querySelector(".close");
+const modalClose = document.querySelector(".close");
 
-// Add click event for each gallery image
+
+let currentKey = null; // keep track of which image is open
+
+// Open modal when image clicked
 document.querySelectorAll(".gallery img").forEach(img => {
-img.addEventListener("click", () => {
-    modal.style.display = "flex";
-    modalImg.src = img.src;
-    modalDesc.textContent = img.getAttribute("data-description");
-});
+    img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        currentKey = img.getAttribute("data-key");
+        modalDesc.textContent = translations[savedLang][currentKey] || "";
+    });
 });
 
 // Close modal
-closeBtn.addEventListener("click", () => {
-modal.style.display = "none";
+modalClose.addEventListener("click", () => {
+    modal.style.display = "none";
+    currentKey = null;
 });
 
-// Close if clicking outside content
-window.addEventListener("click", e => {
-if (e.target === modal) {
-    modal.style.display = "none";
+// Called from translations.js when language changes
+function updateModalDescription(lang) {
+    if (modal.style.display === "flex" && currentKey) {
+        modalDesc.textContent = translations[lang][currentKey] || "";
+    }
 }
-});

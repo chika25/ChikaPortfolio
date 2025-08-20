@@ -24,6 +24,11 @@ function applyLanguage(lang) {
             lName.style.fontSize = '200px';
         }
     }
+
+   // Notify modal.js so it can update if a modal is open
+    if (typeof updateModalDescription === "function") {
+        updateModalDescription(lang);
+    }
 }
 
 // When button is clicked
