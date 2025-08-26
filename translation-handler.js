@@ -25,10 +25,16 @@ function applyLanguage(lang) {
         }
     }
 
-   // Notify modal.js so it can update if a modal is open
-    if (typeof updateModalDescription === "function") {
-        updateModalDescription(lang);
+    if (inTitle && inDescription) {
+        if (lang === 'JP') {
+            inTitle.style.fontSize = '85px';
+            inDescription.style.fontSize = '27px';
+        } else {
+            inTitle.style.fontSize = '100px';
+            inDescription.style.fontSize = '35px';
+        }
     }
+
 }
 
 // When button is clicked

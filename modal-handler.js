@@ -14,7 +14,10 @@ document.querySelectorAll(".gallery img").forEach(img => {
         modal.style.display = "flex";
         modalImg.src = img.src;
         currentKey = img.getAttribute("data-key");
-        modalDesc.textContent = translations[savedLang][currentKey] || "";
+
+        // get the current language
+        const currentLang = localStorage.getItem("lang") || "EN";
+        modalDesc.textContent = translations[currentLang][currentKey] || "";
     });
 });
 
@@ -24,9 +27,4 @@ modalClose.addEventListener("click", () => {
     currentKey = null;
 });
 
-// Called from translations.js when language changes
-function updateModalDescription(lang) {
-    if (modal.style.display === "flex" && currentKey) {
-        modalDesc.textContent = translations[lang][currentKey] || "";
-    }
-}
+
