@@ -32,6 +32,18 @@ a{
     margin: 0;
 }
 
+.lang-EN #fName, .lang-EN #lName{
+    font-size:200px;
+}
+
+.lang-JP #fName{
+    font-size:180px;
+}
+
+.lang-JP #lName{
+    font-size:40px;
+}
+
 #heroText {
     font-size: 35px;
     margin-bottom: 40px;
@@ -218,6 +230,22 @@ a{
     margin: 35px 70px;
 }
 
+.lang-EN #inTitle{
+    font-size: 100px;
+}
+
+.lang-EN #inDescription{
+    font-size:35px;
+}
+
+.lang-JP #inTitle{
+    font-size: 85px;
+}
+
+.lang-JP #inDescription{
+    font-size:27px;
+}
+
 .gallery{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -275,4 +303,211 @@ a{
     float: right;
     font-size: 20px;
     cursor: pointer;
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .lang-EN #fName, .lang-EN #lName{
+        font-size:70px;
+    }
+    .lang-EN #heroText {
+        font-size: 28px;
+    }
+    .lang-JP #fName {
+        font-size: 70px;
+    }
+    .lang-JP #heroText {
+        font-size: 25px;
+    }
+    .icon-large, #languageBtn, .footer p {
+        font-size: 20px;
+    }
+    .main-title{
+        font-size: 30px;
+        height:60px;
+        line-height:60px;
+    }
+    .navigation, .hero-section {
+        width: 85%;
+    }
+    #aboutContent.show {
+        max-height: 1000px;
+    }
+    #aboutContent.show, #worksContent.show, #skillsContent.show, #resumeContent.show, #contactContent.show {
+        padding: 0 0 30px 0;
+    }
+    #aboutContent p, #skillsContent p, #contactContent p {
+        width: 85%;
+        font-size: 23px;
+    }
+    #contactContent p:nth-of-type(2) {
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    #worksContent, #resumeContent {
+        gap: 20px;
+    }
+    .work, .resume-item {
+        font-size: 18px;
+        padding: 10px;
+        width: 90px;
+        height: 60px;
+    }
+    .linked-in {
+        font-size: 23px;
+    }
+
+    /* internship-work.html */
+    .lang-EN #inTitle{
+        font-size: 70px;
+    }
+    .lang-EN #inDescription{
+        font-size:25px;
+    }
+    .lang-JP #inTitle { 
+        font-size:40px; 
+    }    
+    .lang-JP #inDescription { 
+        font-size: 20px; 
+    }
+}
+
+/* Large Phones */
+@media (min-width: 481px) and (max-width: 767px) {
+    .lang-EN #fName, .lang-EN #lName{
+        font-size:80px;
+    }
+    .lang-EN #heroText {
+        font-size: 32px;
+    }
+    .lang-JP #fName {
+        font-size: 75px;
+    }
+    .lang-JP #heroText {
+        font-size: 30px;
+    }
+    .icon-large, #languageBtn, .footer p {
+        font-size: 22px;
+    }
+    .main-title{
+        font-size: 33px;
+        height:75px;
+        line-height:75px;
+    }
+    .navigation, .hero-section {
+        width: 82%;
+    }
+    #aboutContent.show {
+        max-height: 1000px;
+    }
+    #skillsContent.show {
+        max-height: 500px;
+    }
+    #aboutContent.show, #worksContent.show, #skillsContent.show, #resumeContent.show, #contactContent.show {
+        padding: 0 0 38px 0;
+    }
+    #aboutContent p, #skillsContent p, #contactContent p {
+        width: 82%;
+        font-size: 25px;
+    }
+    #contactContent p:nth-of-type(2) {
+        margin-top: 7px;
+        margin-bottom: 0px;
+    }
+    #worksContent, #resumeContent {
+        gap: 25px;
+    }
+    .work, .resume-item {
+        font-size: 20px;
+        padding: 15px;
+        width: 100px;
+        height: 70px;
+    }
+    .linked-in {
+        font-size: 25px;
+    }
+
+    /* internship-work.html */
+    .lang-EN #inTitle{
+        font-size: 75px;
+    }
+    .lang-EN #inDescription{
+        font-size:28px;
+    }
+    .lang-JP #inTitle { 
+        font-size:60px; 
+    }    
+    .lang-JP #inDescription { 
+        font-size: 23px; 
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+      .lang-EN #fName, .lang-EN #lName{
+        font-size:85px;
+    }
+    .lang-EN #heroText {
+        font-size: 38px;
+    }
+    .lang-JP #fName {
+        font-size: 80px;
+    }
+    .lang-JP #heroText {
+        font-size: 35px;
+    }
+    .icon-large, #languageBtn, .footer p {
+        font-size: 24px;
+    }
+    .main-title{
+        font-size: 35px;
+        height:80px;
+        line-height:80px;
+    }
+    .navigation, .hero-section {
+        width: 80%;
+    }
+    #aboutContent.show {
+        max-height: 1000px;
+    }
+    #skillsContent.show {
+        max-height: 500px;
+    }
+    #aboutContent.show, #worksContent.show, #skillsContent.show, #resumeContent.show, #contactContent.show {
+        padding: 0 0 40px 0;
+    }
+    #aboutContent p, #skillsContent p, #contactContent p {
+        width: 80%;
+        font-size: 28px;
+    }
+    #contactContent p:nth-of-type(2) {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    #worksContent, #resumeContent {
+        gap: 30px;
+    }
+    .work, .resume-item {
+        font-size: 23px;
+        padding: 18px;
+        width: 120px;
+        height: 80px;
+    }
+    .linked-in {
+        font-size: 28px;
+    }
+    
+    /* internship-work.html */
+    .lang-EN #inTitle{
+        font-size: 85px;
+    }
+    .lang-EN #inDescription{
+        font-size:30px;
+    }
+    .lang-JP #inTitle { 
+        font-size:65px; 
+    }    
+    .lang-JP #inDescription { 
+        font-size: 26px; 
+    }
 }

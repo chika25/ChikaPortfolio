@@ -80,3 +80,16 @@ contactBtn.addEventListener('click', () => {
   }
 });
 
+// remove arrow when the screan is smaller than 768px
+function reportSize() {
+  if (window.innerWidth < 768) {
+    const arrow = document.querySelector(".arrow");
+    if (arrow) {
+        arrow.style.display = "none";  
+    }
+  } else {
+    arrow.style.display = "block";  
+  }
+}
+reportSize();
+window.addEventListener("resize", reportSize);

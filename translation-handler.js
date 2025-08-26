@@ -9,32 +9,13 @@ applyLanguage(savedLang);
 
 // Apply translations and styles
 function applyLanguage(lang) {
+    document.body.classList.remove("lang-EN", "lang-JP");
+    document.body.classList.add(`lang-${lang}`);
+
     Object.keys(translations[lang]).forEach(key => {
         const el = document.getElementById(key);
         if (el) el.innerHTML = translations[lang][key];
     });
-
-
-    if (fName && lName) {
-        if (lang === 'JP') {
-            fName.style.fontSize = '180px';
-            lName.style.fontSize = '40px';
-        } else {
-            fName.style.fontSize = '200px';
-            lName.style.fontSize = '200px';
-        }
-    }
-
-    if (inTitle && inDescription) {
-        if (lang === 'JP') {
-            inTitle.style.fontSize = '85px';
-            inDescription.style.fontSize = '27px';
-        } else {
-            inTitle.style.fontSize = '100px';
-            inDescription.style.fontSize = '35px';
-        }
-    }
-
 }
 
 // When button is clicked
