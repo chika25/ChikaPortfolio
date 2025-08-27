@@ -188,7 +188,7 @@ a{
 }
 
 #aboutContent.show{
-    max-height: 412.8px; 
+    max-height: 800px; 
 }
 
 #worksContent.show, #resumeContent.show{
@@ -330,9 +330,6 @@ a{
     .navigation, .hero-section {
         width: 85%;
     }
-    #aboutContent.show {
-        max-height: 1000px;
-    }
     #aboutContent.show, #worksContent.show, #skillsContent.show, #resumeContent.show, #contactContent.show {
         padding: 0 0 30px 0;
     }
@@ -396,9 +393,6 @@ a{
     }
     .navigation, .hero-section {
         width: 82%;
-    }
-    #aboutContent.show {
-        max-height: 1000px;
     }
     #skillsContent.show {
         max-height: 500px;
@@ -466,9 +460,6 @@ a{
     }
     .navigation, .hero-section {
         width: 80%;
-    }
-    #aboutContent.show {
-        max-height: 1000px;
     }
     #skillsContent.show {
         max-height: 500px;
