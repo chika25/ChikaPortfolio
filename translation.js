@@ -23,7 +23,7 @@ const translations = {
         resumeEn:"English",
         resumeJp:"Japanese",
         contactBtn: "Contact",
-        contactText: `Please contact me at <a href="mailto:c.kurihara25@gmail.com" class="email">c.kurihara25@gmail.com</a>`,
+        contactText: `Please contact me at: <a href="mailto:c.kurihara25@gmail.com" class="email">c.kurihara25@gmail.com</a>`,
         contactTextOr: "or",
         inTitle: `Internship<br>Work`,
         inDescription: `Worked as a website developer during my internship. Created new pages (such as landing pages) and managed or modified existing pages using HTML, 

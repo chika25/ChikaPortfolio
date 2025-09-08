@@ -6,7 +6,8 @@ html, body {
   }
 
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    font-size:16px;
 }
 
 a{
@@ -27,25 +28,25 @@ a{
     gap: 10px;
 }
 
-#fName, #lName {
-    font-size: 200px;
+/* #fName, #lName {
+    font-size: 12.5rem;
     margin: 0;
-}
+} */
 
 .lang-EN #fName, .lang-EN #lName{
-    font-size:200px;
+    font-size:12.5rem;
 }
 
 .lang-JP #fName{
-    font-size:180px;
+    font-size:11.25rem;
 }
 
 .lang-JP #lName{
-    font-size:40px;
+    font-size:2.5rem;
 }
 
 #heroText {
-    font-size: 35px;
+    font-size: 2.18rem;
     margin-bottom: 40px;
 }
 
@@ -57,7 +58,7 @@ a{
 }
 
 .icon-large, #languageBtn{
-    font-size: 25px;
+    font-size: 1.56rem;
 }
 
 .icon-large:hover, #languageBtn:hover{
@@ -68,7 +69,7 @@ a{
 .main-title {
     font-weight: bold;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 0;
     height: 100px;
     line-height: 100px;
@@ -88,7 +89,7 @@ a{
     margin:0;
     width: 70%;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 1.87rem;
 }
 
 #worksContent, #resumeContent {
@@ -100,7 +101,8 @@ a{
 .work, .resume-item {
     text-decoration: none;
     color: black;
-    font-size: 30px;
+    font-size: 1.87rem;
+    text-align: center;
     font-weight: bold;
     background-color: white;
     padding: 10px;
@@ -121,7 +123,7 @@ a{
 }
 
 .linked-in{
-    font-size: 30px;
+    font-size: 1.87rem;
     color:black;
     padding:6px;
 }
@@ -148,7 +150,7 @@ a{
 
 .footer p{
     text-align: center;
-    font-size: 25px;
+    font-size: 1.56rem;
     margin-top: 100px;
     padding-bottom: 40px;
 }
@@ -187,21 +189,10 @@ a{
   background-color: #FEFAE0;
 }
 
-#aboutContent.show{
-    max-height: 800px; 
+#aboutContent.show, #worksContent.show, #resumeContent.show,#skillsContent.show, #contactContent.show{
+    max-height: max-content;
 }
 
-#worksContent.show, #resumeContent.show{
-    max-height: 120px; 
-}
-
-#skillsContent.show{
-    max-height: 240.8px; 
-}
-
-#contactContent.show{
-    max-height: 126.8px; 
-}
 
 /* internship-work.html styling */
 #inContent{
@@ -216,34 +207,34 @@ a{
 }
 
 .cancelBtnContainer i{
-    font-size:30px;
+    font-size:1.87rem;
     padding:15px;
 }
 
 #inTitle {
     text-align: center;
-    font-size: 100px;
+    font-size: 6.25rem;
 }
 
 #inDescription{
-    font-size:35px;
+    font-size:2.18rem;
     margin: 35px 70px;
 }
 
 .lang-EN #inTitle{
-    font-size: 100px;
+    font-size: 6.25rem;
 }
 
 .lang-EN #inDescription{
-    font-size:35px;
+    font-size:2.18rem;
 }
 
 .lang-JP #inTitle{
-    font-size: 85px;
+    font-size: 5.31rem;
 }
 
 .lang-JP #inDescription{
-    font-size:27px;
+    font-size:1.68rem;
 }
 
 .gallery{
@@ -301,29 +292,29 @@ a{
 
 .close {
     float: right;
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
 }
 
-/* Phones */
-@media (max-width: 480px) {
+/* Small Phones */
+@media (max-width: 360px){
     .lang-EN #fName, .lang-EN #lName{
-        font-size:70px;
+        font-size:4.37rem;
     }
     .lang-EN #heroText {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
     .lang-JP #fName {
-        font-size: 70px;
+        font-size: 4.37rem;
     }
     .lang-JP #heroText {
-        font-size: 25px;
+        font-size: 1.56rem;
     }
     .icon-large, #languageBtn, .footer p {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .main-title{
-        font-size: 30px;
+        font-size: 1.87rem;
         height:60px;
         line-height:60px;
     }
@@ -335,7 +326,7 @@ a{
     }
     #aboutContent p, #skillsContent p, #contactContent p {
         width: 85%;
-        font-size: 23px;
+        font-size: 1.43rem;
     }
     #contactContent p:nth-of-type(2) {
         margin-top: 5px;
@@ -345,64 +336,163 @@ a{
         gap: 20px;
     }
     .work, .resume-item {
-        font-size: 18px;
+        font-size: 1.12rem;
         padding: 10px;
         width: 90px;
         height: 60px;
     }
     .linked-in {
-        font-size: 23px;
+        font-size: 1.43rem;
     }
 
     /* internship-work.html */
-    .lang-EN #inTitle{
-        font-size: 70px;
+    .lang-EN #inTitle {
+        font-size: 3.5rem;
     }
-    .lang-EN #inDescription{
-        font-size:25px;
+
+    .lang-JP #inTitle {
+        font-size: 2rem;
     }
-    .lang-JP #inTitle { 
-        font-size:40px; 
-    }    
-    .lang-JP #inDescription { 
-        font-size: 20px; 
+
+    .lang-EN #inDescription {
+        font-size: 1.75rem;
+    }
+    .lang-JP #inDescription {
+        font-size: 1.5rem;
+    }
+    #inDescription {
+        margin: 35px 20px;
+    }
+
+    .gallery {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .modal-content {
+        margin: 0 10px;
+    }
+
+    .modal-content img {
+        max-height: 65vh;
+    }
+}
+
+
+/* Phones */
+@media  (min-width: 361px) and (max-width: 480px) {
+    .lang-EN #fName, .lang-EN #lName{
+        font-size:4.37rem;
+    }
+    .lang-EN #heroText {
+        font-size: 1.75rem;
+    }
+    .lang-JP #fName {
+        font-size: 4.37rem;
+    }
+    .lang-JP #heroText {
+        font-size: 1.56rem;
+    }
+    .icon-large, #languageBtn, .footer p {
+        font-size: 1.25rem;
+    }
+    .main-title{
+        font-size: 1.87rem;
+        height:60px;
+        line-height:60px;
+    }
+    .navigation, .hero-section {
+        width: 85%;
+    }
+    #aboutContent.show, #worksContent.show, #skillsContent.show, #resumeContent.show, #contactContent.show {
+        padding: 0 0 30px 0;
+    }
+    #aboutContent p, #skillsContent p, #contactContent p {
+        width: 85%;
+        font-size: 1.43rem;
+    }
+    #contactContent p:nth-of-type(2) {
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    #worksContent, #resumeContent {
+        gap: 20px;
+    }
+    .work, .resume-item {
+        font-size: 1.12rem;
+        padding: 10px;
+        width: 90px;
+        height: 60px;
+    }
+    .linked-in {
+        font-size: 1.43rem;
+    }
+
+    /* internship-work.html */
+    .lang-EN #inTitle {
+        font-size: 3.7rem;
+    }
+
+    .lang-JP #inTitle {
+        font-size: 2.2rem;
+    }
+
+    .lang-EN #inDescription {
+        font-size: 1.75rem;
+    }
+    .lang-JP #inDescription {
+        font-size: 1.5rem;
+    }
+    #inDescription {
+        margin: 35px 20px;
+    }
+
+    .gallery {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .modal-content {
+        margin: 0 10px;
+    }
+
+    .modal-content img {
+        max-height: 65vh;
     }
 }
 
 /* Large Phones */
 @media (min-width: 481px) and (max-width: 767px) {
     .lang-EN #fName, .lang-EN #lName{
-        font-size:80px;
+        font-size:5rem;
     }
     .lang-EN #heroText {
-        font-size: 32px;
+        font-size: 2rem;
     }
     .lang-JP #fName {
-        font-size: 75px;
+        font-size: 4.68rem;
     }
     .lang-JP #heroText {
-        font-size: 30px;
+        font-size: 1.87rem;
     }
     .icon-large, #languageBtn, .footer p {
-        font-size: 22px;
+        font-size: 1.37rem;
     }
     .main-title{
-        font-size: 33px;
+        font-size: 2.06rem;
         height:75px;
         line-height:75px;
     }
     .navigation, .hero-section {
         width: 82%;
     }
-    #skillsContent.show {
-        max-height: 500px;
-    }
+    
     #aboutContent.show, #worksContent.show, #skillsContent.show, #resumeContent.show, #contactContent.show {
         padding: 0 0 38px 0;
     }
     #aboutContent p, #skillsContent p, #contactContent p {
         width: 82%;
-        font-size: 25px;
+        font-size: 1.56rem;
     }
     #contactContent p:nth-of-type(2) {
         margin-top: 7px;
@@ -412,64 +502,69 @@ a{
         gap: 25px;
     }
     .work, .resume-item {
-        font-size: 20px;
+        font-size: 1.25rem;
         padding: 15px;
         width: 100px;
         height: 70px;
     }
     .linked-in {
-        font-size: 25px;
+        font-size: 1.56rem;
     }
 
     /* internship-work.html */
     .lang-EN #inTitle{
-        font-size: 75px;
+        font-size: 4.68rem;
     }
     .lang-EN #inDescription{
-        font-size:28px;
+        font-size:1.75rem;
     }
     .lang-JP #inTitle { 
-        font-size:60px; 
+        font-size:3.75rem; 
     }    
     .lang-JP #inDescription { 
-        font-size: 23px; 
+        font-size: 1.43rem; 
+    }
+    .modal-content {
+        margin: 0 20px;
+    }
+
+    .modal-content img {
+        max-height: 70vh;
     }
 }
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
       .lang-EN #fName, .lang-EN #lName{
-        font-size:85px;
+        font-size:5.31rem;
     }
     .lang-EN #heroText {
-        font-size: 38px;
+        font-size: 2.37rem;
     }
     .lang-JP #fName {
-        font-size: 80px;
+        font-size: 5rem;
     }
     .lang-JP #heroText {
-        font-size: 35px;
+        font-size: 2.18rem;
     }
     .icon-large, #languageBtn, .footer p {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     .main-title{
-        font-size: 35px;
+        font-size: 2.18rem;
         height:80px;
         line-height:80px;
     }
     .navigation, .hero-section {
         width: 80%;
     }
-    #skillsContent.show {
-        max-height: 500px;
-    }
+    
     #aboutContent.show, #worksContent.show, #skillsContent.show, #resumeContent.show, #contactContent.show {
         padding: 0 0 40px 0;
     }
     #aboutContent p, #skillsContent p, #contactContent p {
         width: 80%;
-        font-size: 28px;
+        font-size: 1.75rem;
     }
     #contactContent p:nth-of-type(2) {
         margin-top: 10px;
@@ -479,26 +574,26 @@ a{
         gap: 30px;
     }
     .work, .resume-item {
-        font-size: 23px;
+        font-size: 1.43rem;
         padding: 18px;
         width: 120px;
         height: 80px;
     }
     .linked-in {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
     
     /* internship-work.html */
     .lang-EN #inTitle{
-        font-size: 85px;
+        font-size: 5.31rem;
     }
     .lang-EN #inDescription{
-        font-size:30px;
+        font-size:1.87rem;
     }
     .lang-JP #inTitle { 
-        font-size:65px; 
+        font-size:4.06rem; 
     }    
     .lang-JP #inDescription { 
-        font-size: 26px; 
+        font-size: 1.62rem; 
     }
 }
