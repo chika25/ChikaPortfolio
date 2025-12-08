@@ -1,5 +1,6 @@
 const translations = {
     EN: {
+        metaDescription: "Front-End Developer portfolio of Chika Kurihara. Specialized in building responsive websites using HTML, CSS, JavaScript, and React.",
         fName: "Chika",
         lName: "Kurihara",
         heroText: "Front-End Developer with hands-on experience in full-stack web projects. Passionate about building clean, responsive, and user-friendly websites.",
@@ -44,6 +45,7 @@ const translations = {
         search4:`Search bar (Mobile): Designed a mobile-friendly version where users can rotate between categories, bestsellers, new patterns, and articles for a smooth browsing experience.`,
     },
     JP: {
+        metaDescription: "フロントエンド開発者、栗原千佳のポートフォリオ。HTML、CSS、JavaScript、Reactを用いたレスポンシブWebサイト制作を得意としています。",
         fName: "栗原 千佳",
         lName: "　　",
         heroText: "フルスタックのWebプロジェクトに携わった実務経験を持つフロントエンドデベロッパーです。クリーンでレスポンシブ、かつユーザーフレンドリーなウェブサイトをつくることにこだわりを持っています。",
