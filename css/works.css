@@ -14,7 +14,7 @@ a{
     color:black;
 }
 
-nav, .hero-section{
+nav{
     width: 70%;
     margin: 0 auto;
 }
@@ -26,6 +26,14 @@ nav, .hero-section{
     width:fit-content;
     gap: 10px;
 }
+#languageBtn:hover{
+    cursor: pointer;
+    color:#FEFAE0;
+}
+#languageBtn{
+    font-size: 1.56rem;
+}
+
 footer p{
     text-align: center;
     font-size: 1.56rem;
@@ -177,6 +185,13 @@ footer p{
 
 /* Small Phones */
 @media (max-width: 360px){
+    nav {
+        width: 85%;
+    }
+     
+    #languageBtn {
+        font-size: 1.25rem;
+    }
     footer p {
         margin-top: 50px;
         font-size: medium;
@@ -228,6 +243,12 @@ footer p{
 
 /* Phones */
 @media  (min-width: 361px) and (max-width: 480px) {
+    #languageBtn {
+        font-size: 1.25rem;
+    }
+    nav {
+        width: 85%;
+    }
     footer p {
         margin-top: 50px;
         font-size: medium;
@@ -279,7 +300,13 @@ footer p{
 
 /* Large Phones */
 @media (min-width: 481px) and (max-width: 767px) {
+    #languageBtn{
+        font-size: 1.37rem;
+    }
 
+    nav {
+        width: 82%;
+    }
     /* internship-work.html */
     .lang-EN .workTitle{
         font-size: 4.68rem;
@@ -304,7 +331,12 @@ footer p{
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
-    
+    #languageBtn {
+        font-size: 1.5rem;
+    }
+    nav {
+        width: 80%;
+    }
     /* internship-work.html */
     .lang-EN .workTitle{
         font-size: 5.31rem;

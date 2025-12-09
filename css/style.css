@@ -209,7 +209,7 @@ footer p{
     .lang-JP #heroText {
         font-size: 1.56rem;
     }
-    .icon-large, #languageBtn, footer p {
+    .icon-large, #languageBtn {
         font-size: 1.25rem;
     }
     .main-title{
@@ -265,7 +265,7 @@ footer p{
     .lang-JP #heroText {
         font-size: 1.56rem;
     }
-    .icon-large, #languageBtn, footer p {
+    .icon-large, #languageBtn {
         font-size: 1.25rem;
     }
     .main-title{
@@ -319,7 +319,7 @@ footer p{
     .lang-JP #heroText {
         font-size: 1.87rem;
     }
-    .icon-large, #languageBtn, footer p {
+    .icon-large, #languageBtn{
         font-size: 1.37rem;
     }
     .main-title{
@@ -370,7 +370,7 @@ footer p{
     .lang-JP #heroText {
         font-size: 2.18rem;
     }
-    .icon-large, #languageBtn, footer p {
+    .icon-large, #languageBtn {
         font-size: 1.5rem;
     }
     .main-title{
