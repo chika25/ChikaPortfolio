@@ -63,7 +63,7 @@ footer p{
     font-size: 6.25rem;
 }
 
-.lang-EN #inDescription{
+.lang-EN #inDescription, .lang-EN .pwDescContainer{
     font-size:2.18rem;
 }
 
@@ -71,11 +71,12 @@ footer p{
     font-size: 5.31rem;
 }
 
-.lang-JP #inDescription{
+.lang-JP #inDescription, .lang-JP .pwDescContainer{
     font-size:1.68rem;
 }
 
-.lang-JP #inDescription, .lang-EN .workTitle{
+.lang-JP #inDescription, .lang-EN .workTitle,
+.lang-EN #inDescription, .lang-JP .workTitle{
     margin-top:0;
 }
 
@@ -189,10 +190,10 @@ footer p{
         font-size: 2rem;
     }
 
-    .lang-EN #inDescription {
+    .lang-EN #inDescription, .lang-EN .pwDescContainer {
         font-size: 1.75rem;
     }
-    .lang-JP #inDescription {
+    .lang-JP #inDescription, .lang-JP .pwDescContainer {
         font-size: 1.5rem;
     }
     #inDescription {
@@ -240,10 +241,10 @@ footer p{
         font-size: 2.2rem;
     }
 
-    .lang-EN #inDescription {
+    .lang-EN #inDescription, .lang-EN .pwDescContainer {
         font-size: 1.75rem;
     }
-    .lang-JP #inDescription {
+    .lang-JP #inDescription, .lang-JP .pwDescContainer {
         font-size: 1.5rem;
     }
     #inDescription {
@@ -283,13 +284,13 @@ footer p{
     .lang-EN .workTitle{
         font-size: 4.68rem;
     }
-    .lang-EN #inDescription{
+    .lang-EN #inDescription, .lang-EN .pwDescContainer{
         font-size:1.75rem;
     }
     .lang-JP .workTitle { 
         font-size:3.75rem; 
     }    
-    .lang-JP #inDescription { 
+    .lang-JP #inDescription, .lang-JP .pwDescContainer { 
         font-size: 1.43rem; 
     }
     .modal-content {
@@ -308,13 +309,13 @@ footer p{
     .lang-EN .workTitle{
         font-size: 5.31rem;
     }
-    .lang-EN #inDescription{
+    .lang-EN #inDescription, .lang-EN .pwDescContainer{
         font-size:1.87rem;
     }
     .lang-JP .workTitle { 
         font-size:4.06rem; 
     }    
-    .lang-JP #inDescription { 
+    .lang-JP #inDescription, .lang-JP .pwDescContainer { 
         font-size: 1.62rem; 
     }
 }

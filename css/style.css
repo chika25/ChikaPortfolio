@@ -94,6 +94,7 @@ nav, .hero-section{
 
 #worksContent, #resumeContent {
     display: flex;
+    flex-wrap: wrap;
     gap: 100px;
     justify-content: center;
 }
