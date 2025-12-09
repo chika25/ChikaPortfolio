@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chika Kurihara – Portfolio:Personal Projects</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+        <link rel="stylesheet" href="css/works.css" />
+    </head>
+    <body class="lang-EN">
+        <nav>
+            <div id="languageBtn">
+                <i class="fa-solid fa-globe icon-large"></i>
+                <p id="lg">EN</p>
+            </div>
+        </nav>
+
+        <div id="inContent">
+
+            <div class="cancelBtnContainer">
+                 <a href="index.html"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <h1 id="pwTitle" class="workTitle">Personal<br>Project</h1>
+
+            <div class="pwWorksContainer">
+                <div class="pwWork">
+                    <h2 id="sozaiTitle">SozAI - AI Image Library</h2>
+                    <img src="images/image.png" alt="SozAI main screen image">
+                    <div class="pwDescContainer">
+                        
+                        <p>
+                            <strong id="overviewHeader">Overview:</strong> <span id="sozaiOverview">SozAI is a public web application providing high-quality, free-to-use AI-generated images for commercial and personal projects.</span>
+                        </p>
+                        
+                        <p>
+                            <strong id="roleHeader">Role:</strong> <span id="sozaiRole">Sole Developer (Design, Front-End, Infrastructure Setup, and Deployment)</span>
+                        </p>
+
+                        <h3 id="frontendHeader">Front-End Development</h3>
+                        <ul>
+                            <li>
+                                <strong id="coreTechHeader">Core Technologies:</strong> <span id="sozaiCoreTech">HTML5, CSS3, and Vanilla JavaScript.</span>
+                            </li>
+                            <li>
+                                <strong id="dynamicFeaturesHeader">Dynamic Features:</strong> <span id="sozaiDynamicFeatures">Implemented a client-side search engine that fetches and filters category data from static JSON files for instant, asynchronous results without server calls.</span>
+                            </li>
+                        </ul>
+
+                        <h3 id="cloudHeader">Cloud Infrastructure & Deployment</h3>
+                        <ul>
+                            <li>
+                                <strong id="hostingHeader">Hosting:</strong> <span id="sozaiHosting">Fully deployed and managed on AWS, demonstrating cloud deployment proficiency.</span>
+                            </li>
+                            <li>
+                                <strong id="storageHeader">Storage & Delivery:</strong> <span id="sozaiStorage">Utilized Amazon S3 buckets for reliable static file storage, distributed globally via Amazon CloudFront for low-latency content delivery.</span>
+                            </li>
+                            <li>
+                                <strong id="dnsHeader">DNS & Security:</strong> <span id="sozaiDns">Configured domain routing using Route 53 and managed SSL certificates via AWS Certificate Manager (ACM) to ensure HTTPS security.</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="https://sozaiai.com" target="_blank" aria-label="Open SozAI live site in a new tab">
+                            <img src="images/SozAI.webp" alt="SozAI logo">
+                            <span class="sr-only" id="visitSite">Visit Live Site</span> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>©Chika Kurihara 2025</p>
+        </footer>
+        <script src="translation.js"></script>
+        <script src="translation-handler.js"></script>
+        <script src="modal-handler.js"></script>
+    </body>
+</html>

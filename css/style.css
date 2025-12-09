@@ -193,111 +193,9 @@ footer p{
     max-height: max-content;
 }
 
-
-/* internship-work.html styling */
-#inContent{
-    background-color: #FEFAE0;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.cancelBtnContainer {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.cancelBtnContainer i{
-    font-size:1.87rem;
-    padding:15px;
-}
-
-#inTitle {
-    text-align: center;
-    font-size: 6.25rem;
-}
-
-#inDescription{
-    font-size:2.18rem;
-    margin: 35px 70px;
-}
-
-.lang-EN #inTitle{
-    font-size: 6.25rem;
-}
-
-.lang-EN #inDescription{
-    font-size:2.18rem;
-}
-
-.lang-JP #inTitle{
-    font-size: 5.31rem;
-}
-
-.lang-JP #inDescription{
-    font-size:1.68rem;
-}
-
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
-    margin:0 70px;
-    padding-bottom: 60px;
-}
-
-.gallery img{
-    width:100%;
-    cursor: pointer;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-    height: 200px;   
-    object-fit: contain;
-    background-color: white;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* modal styling */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background: #FEFAE0;
-    padding: 20px;
-    max-width: 600px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.modal-content img {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    max-height: 80vh;        
-    object-fit: contain; 
-}
-
-.close {
-    float: right;
-    font-size: 1.25rem;
-    cursor: pointer;
-}
-
 /* Small Phones */
 @media (max-width: 360px){
+    
     .lang-EN #fName, .lang-EN #lName{
         font-size:4.37rem;
     }
@@ -344,38 +242,11 @@ footer p{
     .linked-in {
         font-size: 1.43rem;
     }
-
-    /* internship-work.html */
-    .lang-EN #inTitle {
-        font-size: 3.5rem;
+    footer p {
+        margin-top: 50px;
+        font-size: medium;
     }
 
-    .lang-JP #inTitle {
-        font-size: 2rem;
-    }
-
-    .lang-EN #inDescription {
-        font-size: 1.75rem;
-    }
-    .lang-JP #inDescription {
-        font-size: 1.5rem;
-    }
-    #inDescription {
-        margin: 35px 20px;
-    }
-
-    .gallery {
-        margin: 0;
-        padding: 20px;
-    }
-
-    .modal-content {
-        margin: 0 10px;
-    }
-
-    .modal-content img {
-        max-height: 65vh;
-    }
 }
 
 
@@ -427,37 +298,9 @@ footer p{
     .linked-in {
         font-size: 1.43rem;
     }
-
-    /* internship-work.html */
-    .lang-EN #inTitle {
-        font-size: 3.7rem;
-    }
-
-    .lang-JP #inTitle {
-        font-size: 2.2rem;
-    }
-
-    .lang-EN #inDescription {
-        font-size: 1.75rem;
-    }
-    .lang-JP #inDescription {
-        font-size: 1.5rem;
-    }
-    #inDescription {
-        margin: 35px 20px;
-    }
-
-    .gallery {
-        margin: 0;
-        padding: 20px;
-    }
-
-    .modal-content {
-        margin: 0 10px;
-    }
-
-    .modal-content img {
-        max-height: 65vh;
+    footer p {
+        margin-top: 50px;
+        font-size: medium;
     }
 }
 
@@ -510,27 +353,6 @@ footer p{
     .linked-in {
         font-size: 1.56rem;
     }
-
-    /* internship-work.html */
-    .lang-EN #inTitle{
-        font-size: 4.68rem;
-    }
-    .lang-EN #inDescription{
-        font-size:1.75rem;
-    }
-    .lang-JP #inTitle { 
-        font-size:3.75rem; 
-    }    
-    .lang-JP #inDescription { 
-        font-size: 1.43rem; 
-    }
-    .modal-content {
-        margin: 0 20px;
-    }
-
-    .modal-content img {
-        max-height: 70vh;
-    }
 }
 
 /* Tablets */
@@ -581,19 +403,5 @@ footer p{
     }
     .linked-in {
         font-size: 1.75rem;
-    }
-    
-    /* internship-work.html */
-    .lang-EN #inTitle{
-        font-size: 5.31rem;
-    }
-    .lang-EN #inDescription{
-        font-size:1.87rem;
-    }
-    .lang-JP #inTitle { 
-        font-size:4.06rem; 
-    }    
-    .lang-JP #inDescription { 
-        font-size: 1.62rem; 
     }
 }
